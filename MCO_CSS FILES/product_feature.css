@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/*HEADER / NAVIGATION*/
+header {
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #e6739f; /* soft pink highlight */
+}
+
+/*HERO SECTION*/
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+  text-align: center;
+}
+
+.hero .product-photo {
+  max-width: 300px;
+  width: 80%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  color: #5d1049;
+  letter-spacing: 1px;
+}
+
+/*PRODUCT INFO*/
+.product-info {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.product-info h2 {
+  color: #5d1049;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.product-info p {
+  margin-bottom: 1.5rem;
+}
+
+.product-info h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #ad1457;
+}
+
+.product-info ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+}
+
+.product-info li {
+  margin-bottom: 0.5rem;
+}
+
+/* === GALLERY === */
+.gallery {
+  background: #fff;
+  padding: 3rem 1rem;
+}
+
+.gallery h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #5d1049;
+  margin-bottom: 2rem;
+}
+
+.gallery .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/*FOOTER / CONTACT*/
+footer {
+  background: #5d1049;
+  color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+footer h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form label {
+  text-align: left;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 0 2px #f48fb1;
+}
+
+.contact-form button {
+  padding: 0.75rem;
+  background: #f48fb1;
+  border: none;
+  border-radius: 6px;
+  color: #5d1049;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #f06292;
+}
+
+footer p {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  nav ul {
+    gap: 1rem;
+  }
+}

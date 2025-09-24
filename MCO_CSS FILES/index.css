@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4ecf7 100%);
+  color: #333;
+  line-height: 1.7;
+}
+
+/*Header / Navigation*/
+header {
+  background: rgba(50, 50, 93, 0.95);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+header nav ul li {
+  margin: 0 1.5rem;
+}
+
+header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #9cd7f8;
+  transform: translateY(-2px);
+}
+
+/*Layout */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  gap: 2rem;
+}
+
+/* Main content */
+main > section {
+  flex: 1 1 650px;
+  min-width: 300px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+main > section:hover {
+  transform: translateY(-4px);
+}
+
+/* Aside right column */
+aside {
+  flex: 0 0 300px;
+  background: #ffffff;
+  padding: 1.8rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  height: fit-content;
+  align-self: start;
+  transition: transform 0.3s ease;
+}
+
+aside:hover {
+  transform: translateY(-4px);
+}
+
+h1, h2, h3, h4 {
+  margin-bottom: 1rem;
+  color: #2a2a2a;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.portrait {
+  width: 100%;
+  max-width: 260px;
+  border-radius: 16px;
+  display: block;
+  margin: 1rem auto;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.portrait:hover {
+  transform: scale(1.05);
+}
+
+/* Skills & Hobbies */
+.skills ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+
+.skills li {
+  background: #fdfdfd;
+  border-radius: 14px;
+  width: 280px;
+  padding: 1.2rem;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* ===== WebDev Activities ===== */
+.webdev > div {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.webdev img {
+  max-width: 250px;
+  border-radius: 14px;
+  margin-bottom: 0.8rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* ===== Birthday Calendar ===== */
+.calendar h4 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.calendar table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  background: #f7f9fc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.calendar th,
+.calendar td {
+  border: 1px solid #d0d7e1;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.calendar th {
+  background: #e1ecf7;
+  color: #333;
+  font-weight: 600;
+}
+
+.calendar .highlight {
+  background: #9cd7f8;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/*Footer */
+footer {
+  background: #32325d;
+  color: #fff;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  margin-top: 3rem;
+}
+
+footer h2 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+footer form {
+  max-width: 500px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+footer label {
+  text-align: left;
+  font-weight: 500;
+}
+
+footer input,
+footer textarea,
+footer button {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+footer input,
+footer textarea {
+  background: #f0f2f5;
+}
+
+footer button {
+  background: #9cd7f8;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+footer button:hover {
+  background: #6ec1f4;
+}
+
+/*  Responsive */
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+  aside {
+    width: 100%;
+  }
+}
