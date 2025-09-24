@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="product_gallery.css">
+  <title>Product Gallery</title>
+</head>
+<body>
+  <!-- Site Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="Product_Feature.html">Product Feature Page</a></li>
+        <li><a href="product_gallery.html">Product Shop Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="Header Photo.png" alt="Display of makeup products" class="product-photo">
+    <h1>Make Up Products</h1>
+  </section>
+
+  <!-- Product Gallery -->
+  <section class="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="grid">
+
+      <div class="product-column">
+        <img src="Lipstick.png" alt="Lipstick product">
+        <h3>Lipstick</h3>
+        <p>Enhances the beauty of the lips.</p>
+        <div class="btn">
+          <span class="price">₱150.00</span>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-column">
+        <img src="Brush.png" alt="Makeup brush">
+        <h3>Brush</h3>
+        <p>Applies makeup smoothly and evenly.</p>
+        <div class="btn">
+          <span class="price">₱200.00</span>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-column">
+        <img src="Colorful Eye Shadow.png" alt="Colorful Eye Shadow">
+        <h3>Colorful Eye Shadow</h3>
+        <p>Adds depth and dimension to the eyes.</p>
+        <div class="btn">
+          <span class="price">₱250.00</span>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-column">
+        <img src="Mascara.png" alt="Mascara">
+        <h3>Mascara</h3>
+        <p>Makes lashes appear longer and fuller.</p>
+        <div class="btn">
+          <span class="price">₱300.00</span>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-column">
+        <img src="Foundation.png" alt="Foundation">
+        <h3>Foundation</h3>
+        <p>Creates an even skin tone and base.</p>
+        <div class="btn">
+          <span class="price">₱400.00</span>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-column">
+        <img src="Foundation.png" alt="Concealer">
+        <h3>Concealer</h3>
+        <p>Covers blemishes for a flawless finish.</p>
+        <div class="btn">
+          <span class="price">₱450.00</span>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <label for="name">Name</label>
+      <input id="name" type="text" placeholder="Name" required>
+
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="Email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+    <p class="copyright">© 2025 Santchay Cabel. All rights reserved.</p>
+  </footer>
+
+  <script src="product_gallery.js"></script>
+</body>
+</html>
+
+<!--REFERENCES:
+1. https://html.spec.whatwg.org/
+2. https://developer.mozilla.org/docs/Web/HTML/Element/meta
+3. https://developer.mozilla.org/docs/Learn/Forms
+4. https://developer.mozilla.org/docs/Web/HTML/Element/img
+5. https://developer.mozilla.org/docs/Web/CSS
+6. https://www.w3.org/TR/mediaqueries-5/
+7. https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction
+8. https://developer.mozilla.org/docs/Web/API/EventTarget/addEventListener

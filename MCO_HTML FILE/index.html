@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Resume / About Me</title><!--My title website-->
+  <meta name="description" content="Personal webpage of Santchay L. Cabel – resume, skills, and projects.">
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <!--HEADER-->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="product_Feature.html">Product Feature Page</a></li>
+        <li><a href="product_galery.html">Product Shop Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--BODY CONTENT-->
+  <main>
+    <!--Self Introduction-->
+    <section id="about">
+      <h1>Hello, I’m Santchay L. Cabel</h1>
+      <img src="image.png" alt="My Portrait" class="portrait" />
+      <p>
+        I’m Santchay Cabel, a Bachelor of Science in Computer Science student at Ilocos Sur Polytechnic State College(ISPSC).
+        My first first choice is becoming a nurse, but when the nursing course wasn’t offered at ISPSC so that I decided to follow another course like computer science. That choice turned into something I truly enjoy.
+        I like designing websites, learning programming languages, and understanding how software works.
+        Some of my favorite activities are experimenting with simple projects, exploring new coding techniques, and helping classmates when they need tech support.
+        Outside of school, I spend time budgeting and planning my studies carefully, since I sometimes need to balance finances and schoolwork.
+        These experiences taught me to be patient, resourceful, and independent, skills I also bring to my projects.
+        My goal is to become a skilled developer who can build practical applications that make everyday tasks easier for people and businesses.
+      </p>
+    </section>
+
+    <!-- Skills & Hobbies -->
+    <section id="skills">
+      <div class="grid">
+      <h2>Skills and Hobbies</h2>
+      <ul>
+        <li>
+          Listening to Music is can reudce my stress and boost my strenght when I doing my activities.
+          <img src="listening to music.png" alt="Listening to Music" class="portrait" />
+        </li>
+        <li>
+          Watching Anime is my entertainment sometimes especially whem I'm eating or there is nothing to do.
+          <img src="watching anime.png" alt="Watching Anime" class="portrait" />
+        </li>
+        <li>
+          At first, coding is not my passion beacuse it's hard to understand the diffrent process and content of programming. However, I tell myself that I need to pursue or continue when I started and believe in yourself that I can do it. 
+          <img src="coding.png" alt="Coding" class="portrait" />
+        </li>
+      </ul>
+      </div>
+    </section>
+
+    <!-- WebDev Activities -->
+    <section id="webdev">
+      <div class="webdev-grid"></div>
+      <h2>WebDev Activities</h2>
+      <div>
+        <img src="cheatsheet.png" alt="HTML/CSS Cheatsheet" class="portrait" />
+        <p>
+          A quick reference to help write and style webpages faster. It’s a handy guide for students or beginners who need to recall basic syntax without searching long documentation.
+        </p>
+      </div>
+
+      <div>
+        <img src="product.png" alt="Personal Project Screenshot" class="portrait" />
+        <p>
+          A simple webpage that showcases my skills and hobbies. It includes sections about me, my skills, and my web development activities. The design is clean and user-friendly.
+        </p>
+      </div>
+
+      <div>
+        <img src="website survey.png" alt="Website Survey Screenshot" class="portrait" />
+        <p>
+          A survey to gather feedback on the usability and design of my personal webpage—covering layout, content, and overall user experience.
+        </p>
+      </div>
+    </section>
+
+    <!--Body Aside-->
+    <!-- Birthday Calendar -->
+    <aside>
+      <h3>Birthday Calendar</h3>
+      <div class="calendar">
+        <h4>August 2006</h4>
+        <table>
+            <tr>
+              <th>Sunday</th>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+              <th>Saturday</th>
+            </tr>
+          
+            <tr>
+              <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+            </tr>
+            <tr>
+              <td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+            </tr>
+            <tr>
+              <td>15</td><td>16</td><td>17</td>
+              <td class="highlight">18</td>
+              <td>19</td><td>20</td><td>21</td>
+            </tr>
+            <tr>
+              <td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
+            </tr>
+            <tr>
+              <td>29</td><td>30</td><td>31</td>
+              <td></td><td></td><td></td><td></td>
+            </tr>
+        </table>
+      </div>
+    </div>
+
+      <div class="Nav-Links">
+        <nav>
+          <a href="https://github.com/santchaycabel" target="_blank" rel="noopener">My GitHub</a>
+        </nav>
+        </div>
+    </aside>
+  </main>
+  <!--FOOTER WITH CONTACT FORM-->
+  <footer id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm" action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p>&copy; 2025 Santchay L. Cabel</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
+
+<!--REFERENCES:
+1. https://html.spec.whatwg.org/
+2. https://developer.mozilla.org/docs/Web/HTML/Element/meta
+3. https://developer.mozilla.org/docs/Web/HTML/Element/section
+4. https://developer.mozilla.org/docs/Web/CSS
+5. https://www.w3.org/TR/mediaqueries-5/
+6. https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction
+7. https://developer.mozilla.org/docs/Web/API/EventTarget/addEventListener
